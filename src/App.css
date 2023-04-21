@@ -1,0 +1,244 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*::-webkit-scrollbar{
+    display: none;
+  }
+
+h1 {
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.card {
+    
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    border-radius: 7px;
+}
+
+.cardContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:aliceblue;
+    width: 80%;
+    height: 92%;
+    color: black;
+}
+
+.main{
+    display: flex;
+    width: 10rem;
+    height: 10rem;
+    background-color: white;
+    box-shadow: 10px 10px 5px lightblue;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.profile{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: auto;
+    max-width: 100%; 
+}
+
+button {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 7px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+.btn{
+  width: 15rem;
+  margin: 1rem;
+}
+
+.linktag{
+  width: 38rem;
+}
+
+input{
+    margin-top: 3rem;
+}
+
+label{
+    padding-right: 1rem;
+}
+
+a{
+    height:fit-content;
+    width: fit-content;
+}
+  
+  /* Styles for the table */
+  #customers {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+  }
+  
+  #customers th,
+  #customers td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  #customers thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  /* Styles for the table rows and cells */
+  #customers tr {
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  #customers tr:nth-of-type(even) {
+    background-color: #f8f9fa;
+  }
+  
+  #customers td {
+    border-top: none;
+  }
+  
+  @media (max-width: 576px) {
+    /* Styles for small screens */
+    #customers {
+      font-size: 0.9rem;
+    }
+    
+    #customers th,
+    #customers td {
+      padding: 0.5rem;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  
+  
+.left {
+  width: 20%;
+  height: 91%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+
+.create-contact-btn {
+  width: 38rem;
+  height: 2rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+  th, td {
+    display: block;
+    width: 100%;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  td {
+    text-align: left;
+  }
+
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 768px) {
+  .create-contact-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .left {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: none;
+    position: static;
+    overflow-y: visible;
+  }
+
+  .left button {
+    margin: 0 0.5rem;
+  }
+}
+
+
+  
+  
