@@ -10,10 +10,10 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/Contanct-And-Covid-Data-Management" element={<Contact/>}></Route>
-          <Route path="/Contanct-And-Covid-Data-Management/create" element={<Createcontact/>}></Route>
-          <Route path="/Contanct-And-Covid-Data-Management/edit" element={<Editcontact/>}></Route>
-          <Route path="/Contanct-And-Covid-Data-Management/maps" element={<Dashboard/>}></Route>
+          <Route path="https://abhi9752.github.io/Contanct-And-Covid-Data-Management" element={<Contact/>}></Route>
+          <Route path="https://abhi9752.github.io/Contanct-And-Covid-Data-Management/create" element={<Createcontact/>}></Route>
+          <Route path="https://abhi9752.github.io/Contanct-And-Covid-Data-Management/edit" element={<Editcontact/>}></Route>
+          <Route path="https://abhi9752.github.io/Contanct-And-Covid-Data-Management/maps" element={<Dashboard/>}></Route>
         </Routes>
       </Router>
     </>

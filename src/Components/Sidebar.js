@@ -5,8 +5,8 @@ const Sidebar = () => {
     return (
         <>
             <div className='left'>
-                <Link to="/Contanct-And-Covid-Data-Management"> <button className='btn'>Contact Page</button></Link>
-                <Link to="/Contanct-And-Covid-Data-Management/maps"><button className='btn'>Charts And Maps</button></Link>
+                <Link to="https://abhi9752.github.io/Contanct-And-Covid-Data-Management"> <button className='btn'>Contact Page</button></Link>
+                <Link to="https://abhi9752.github.io/Contanct-And-Covid-Data-Management/maps"><button className='btn'>Charts And Maps</button></Link>
             </div>
         </>
     )

@@ -21,7 +21,7 @@ const Editcontact = () => {
         element.firstName = firstname;
         element.lastName = lastname;
         element.status = Status;
-        history("/Contanct-And-Covid-Data-Management")
+        history("https://abhi9752.github.io/Contanct-And-Covid-Data-Management")
       }
 
       useEffect(() => {

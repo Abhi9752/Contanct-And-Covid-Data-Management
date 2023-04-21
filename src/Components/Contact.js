@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className="cardContent">
                     <Sidebar />
                     <div className='right'>
-                        <Link className="create-contact-btn" to="/Contanct-And-Covid-Data-Management/create" >
+                        <Link className="create-contact-btn" to="https://abhi9752.github.io/Contanct-And-Covid-Data-Management/create" >
                             <button className='linktag'>Create Contact</button>
                         </Link>
                         <div className="profile">
