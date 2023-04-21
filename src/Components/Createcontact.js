@@ -22,7 +22,7 @@ const Createcontact = () => {
         Data.push({id,firstName,lastName,status})
         setFirstName("");
         setLastName("");
-        history("/")
+        history("/Contanct-And-Covid-Data-Management")
     }
 
     return (

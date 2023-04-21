@@ -21,7 +21,7 @@ const Editcontact = () => {
         element.firstName = firstname;
         element.lastName = lastname;
         element.status = Status;
-        history("/")
+        history("/Contanct-And-Covid-Data-Management")
       }
 
       useEffect(() => {
