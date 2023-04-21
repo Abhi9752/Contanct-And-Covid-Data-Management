@@ -18,7 +18,7 @@ const Contactcard = () => {
       return ele.id
     }).indexOf(id)
     Data.splice(index,1);
-    history("https://abhi9752.github.io/Contanct-And-Covid-Data-Management");
+    history("/");
   }
 
   return (
@@ -41,7 +41,7 @@ const Contactcard = () => {
                   <td>{ele.lastName}</td>
                   <td>{ele.status}</td>
                   <td>
-                    <Link to="https://abhi9752.github.io/Contanct-And-Covid-Data-Management/edit">
+                    <Link to="/edit">
                       <button onClick={() => handleEdit(ele.id,ele.firstName,ele.lastName,ele.status)}>EDIT</button>
                     </Link>
                     &nbsp;

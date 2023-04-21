@@ -22,7 +22,7 @@ const Createcontact = () => {
         Data.push({id,firstName,lastName,status})
         setFirstName("");
         setLastName("");
-        history("https://abhi9752.github.io/Contanct-And-Covid-Data-Management")
+        history("/")
     }
 
     return (
