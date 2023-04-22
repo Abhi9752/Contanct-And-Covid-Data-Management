@@ -1,70 +1,15 @@
-# Getting Started with Create React App
+To use the Contact and Covid Management App, follow the below steps:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Open the app and land on the Contact Page, which has two sections - left and right.
 
-## Available Scripts
+2. In the left section, you will find two buttons - "Contact Page" and "Charts and Maps". Click on "Charts and Maps" to see covid data in line graph.
 
-In the project directory, you can run:
+3. In the right section, you will find a "Create Contact" button and a list of contacts with four columns - "First Name", "Last Name", "Status", and "Action".
 
-### `npm start`
+4. To create a new contact, click on the "Create Contact" button. It will direct you to the Create Contact page where you can fill in the details of the new contact.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+5. To edit an existing contact, click on the "Edit" button inside the "Action" column of the contact you want to edit. It will redirect you to the Edit Contact page where you can edit the contact details and save them.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+6. To delete a contact, click on the "Delete" button inside the "Action" column of the contact you want to delete. It will remove the contact from the list.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Note: The app is designed to manage contacts and provide covid data in line graph. You can use it to add, edit, and delete contacts, and view the covid data.
