@@ -45,11 +45,13 @@ const Editcontact = () => {
                             <label htmlFor="lastName">Last Name</label>
                             <input id="lastName" type="text" name='lastName' value={lastname} placeholder='Last Name' required="required" onChange={(e) => { setLastName(e.target.value) }} /><br />
                             <div className="status">
-                                <p>Status</p>
-                                <input type="radio" id="active" name="status" value="Active" onClick={(e) => { setStatus(e.target.value) }} />
-                                <label htmlFor="html">Active</label><br />
-                                <input type="radio" id="inactive" name="status" value="Inactive" onClick={(e) => { setStatus(e.target.value) }} />
-                                <label htmlFor="css">Inactive</label><br /><br />
+                                <div className='radiolable'>Status</div>
+                                <div className='options'>
+                                    <input type="radio" id="active" name="status" value="Active" onClick={(e) => { setStatus(e.target.value) }} />
+                                    <label htmlFor="active">Active</label><br />
+                                    <input type="radio" id="inactive" name="status" value="Inactive" onClick={(e) => { setStatus(e.target.value) }} />
+                                    <label htmlFor="inactive">Inactive</label><br /><br />
+                                </div>
                             </div>
                             <button type='submit' onClick={(e)=>{handleSubmit(e)}}>Update Contact</button>
                         </form>

@@ -22,7 +22,7 @@ const Contactcard = () => {
   }
 
   return (
-    <div class="table-responsive">
+    <div className="table-responsive">
       <table id='customers'>
         <thead>
           <tr>

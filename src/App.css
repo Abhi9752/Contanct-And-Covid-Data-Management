@@ -1,169 +1,186 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
 body {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-*::-webkit-scrollbar{
-    display: none;
-  }
+*::-webkit-scrollbar {
+  display: none;
+}
 
 h1 {
-    background-color: blueviolet;
-    text-align: center;
+  background-color: blueviolet;
+  text-align: center;
 }
 
 .card {
-    
-    background-color: whitesmoke;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    color: white;
-    border-radius: 7px;
+
+  background-color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  border-radius: 7px;
 }
 
 .cardContent {
-    display: flex;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 
 
 .right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:aliceblue;
-    width: 80%;
-    height: 92%;
-    color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  width: 80%;
+  height: 92%;
+  color: black;
 }
 
-.main{
-    display: flex;
-    width: 10rem;
-    height: 10rem;
-    background-color: white;
-    box-shadow: 10px 10px 5px lightblue;
-    border-radius: 10px;
-    margin-top: 1rem;
+.main {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+  box-shadow: 10px 10px 5px lightblue;
+  border-radius: 10px;
+  margin-top: 1rem;
 }
 
-.profile{
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    overflow-x: auto;
-    max-width: 100%; 
+.profile {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
 button {
-    width: 10rem;
-    height: 2rem;
-    border-radius: 7px;
-    background-color: blueviolet;
-    color: white;
-    cursor: pointer;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 7px;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
 }
 
-.btn{
+.btn {
   width: 15rem;
   margin: 1rem;
 }
 
-.linktag{
+.linktag {
   width: 38rem;
 }
 
-input{
-    margin-top: 3rem;
+input {
+  margin-top: 3rem;
 }
 
-label{
-    padding-right: 1rem;
+label {
+  padding-right: 1rem;
 }
 
-a{
-    height:fit-content;
-    width: fit-content;
+.status {
+  display: flex;
+  justify-content: center;
 }
-  
-  /* Styles for the table */
+
+.radiolable{
+  position: relative;
+    bottom: -3.2rem;
+    margin-right: 2rem;
+}
+
+#inactive{
+  margin-top: 14px;
+}
+
+a {
+  height: fit-content;
+  width: fit-content;
+}
+
+/* Styles for the table */
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+#customers th,
+#customers td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+#customers thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* Styles for the table rows and cells */
+#customers tr {
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+}
+
+#customers tr:nth-of-type(even) {
+  background-color: #f8f9fa;
+}
+
+#customers td {
+  border-top: none;
+}
+
+@media (max-width: 576px) {
+
+  /* Styles for small screens */
   #customers {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    background-color: #fff;
+    font-size: 0.9rem;
   }
-  
+
   #customers th,
   #customers td {
-    padding: 0.75rem;
-    vertical-align: top;
-    border-top: 1px solid #dee2e6;
+    padding: 0.5rem;
   }
-  
-  #customers thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
-  }
-  
-  /* Styles for the table rows and cells */
-  #customers tr {
-    background-color: #fff;
-    border-top: 1px solid #dee2e6;
-  }
-  
-  #customers tr:nth-of-type(even) {
-    background-color: #f8f9fa;
-  }
-  
-  #customers td {
-    border-top: none;
-  }
-  
-  @media (max-width: 576px) {
-    /* Styles for small screens */
-    #customers {
-      font-size: 0.9rem;
-    }
-    
-    #customers th,
-    #customers td {
-      padding: 0.5rem;
-    }
-  }
+}
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
-  
-  
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+
+
 .left {
   width: 20%;
   height: 91%;
@@ -177,6 +194,7 @@ a{
   bottom: 0;
   padding: 1rem;
   overflow-y: auto;
+  gap: 10px;
 }
 
 
@@ -196,7 +214,9 @@ a{
 
 
 @media screen and (max-width: 600px) {
-  th, td {
+
+  th,
+  td {
     display: block;
     width: 100%;
   }
@@ -206,7 +226,7 @@ a{
   }
 
   td {
-    text-align: left;
+    text-align: center;
   }
 
   td:before {
@@ -222,12 +242,26 @@ a{
     width: 100%;
     margin-top: 1rem;
   }
-  .left {
+
+  .linktag {
     width: 100%;
+  }
+
+  .right{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .btn{
+    width: 100%;
+  }
+  .left {
+    width: 40%;
     height: auto;
     padding: 1rem 0;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     background: none;
     position: static;
@@ -237,8 +271,71 @@ a{
   .left button {
     margin: 0 0.5rem;
   }
+  
 }
 
+.dropbtn{
+  display: none;
+}
 
+/* Styles for the sidebar when the screen is below 576px */
+@media screen and (max-width: 900px) {
+  /* Dropdown Button */
+  .dropbtn {
+    display: inline-block !important;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: blueviolet;
+  }
   
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top:2.5rem;
+    left:0;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+  
+    .left{
+      width: 0;
+    }
+  }
+
+
+
+

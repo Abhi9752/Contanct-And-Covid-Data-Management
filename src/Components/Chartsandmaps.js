@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { MapContainer, Popup } from "react-leaflet";
 import Chart from 'chart.js/auto';
+import Sidebar from './Sidebar';
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
-
+  const [showSidebar, setShowSidebar] = React.useState(false);
   const [countries, setCountries] = useState(new Set());
 
   useEffect(() => {
@@ -20,15 +21,15 @@ const Dashboard = () => {
     const activeCases = data.map((item) => item.active);
     const recoveredCases = data.map((item) => item.recovered);
     const deaths = data.map((item) => item.deaths);
-  
+
     // Get the existing chart instance, if any
     const existingChart = Chart.getChart("myChart");
-  
+
     // If the chart already exists, destroy it before creating a new one
     if (existingChart) {
       existingChart.destroy();
     }
-  
+
     new Chart(ctx, {
       type: "line",
       data: {
@@ -65,35 +66,45 @@ const Dashboard = () => {
       },
     });
   }, [data]);
-  
+
 
   return (
-    <div>
-      <canvas id="myChart" width="1200" height="700"></canvas>
-      <MapContainer center={[0, 0]} zoom={2} style={{ height: "600px" }}>
-      {data.map((item) => {
-        const { country, active, recovered, deaths} = item;
+    <>
+      <div className="card">
+        <h1>Charts And Maps</h1>
+        <div className="cardContent">
+          {/* Pass the props down to the Sidebar component */}
+          <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
 
-        // Only add a marker if the country has not already been added
-        if (countries.has(country)) {
-          return null;
-        }
+          <div className="right" style={{marginTop:"1rem"}}>
+            <canvas id="myChart" width="1200" height="700"></canvas>
+            <MapContainer center={[0, 0]} zoom={2} style={{ height: "600px" }}>
+              {data.map((item) => {
+                const { country, active, recovered, deaths } = item;
 
-        setCountries((prevCountries) => prevCountries.add(country));
+                // Only add a marker if the country has not already been added
+                if (countries.has(country)) {
+                  return null;
+                }
 
-        return (
-            <Popup>
-              <div>
-                <h3>{country}</h3>
-                <p>Active Cases: {active}</p>
-                <p>Recovered Cases: {recovered}</p>
-                <p>Deaths: {deaths}</p>
-              </div>
-            </Popup>
-        );
-      })}
-    </MapContainer>
-    </div>
+                setCountries((prevCountries) => prevCountries.add(country));
+
+                return (
+                  <Popup>
+                    <div>
+                      <h3>{country}</h3>
+                      <p>Active Cases: {active}</p>
+                      <p>Recovered Cases: {recovered}</p>
+                      <p>Deaths: {deaths}</p>
+                    </div>
+                  </Popup>
+                );
+              })}
+            </MapContainer>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
