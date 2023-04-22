@@ -1,3 +1,7 @@
+Git Repo - https://github.com/Abhi9752/Contanct-And-Covid-Data-Management
+AppLink - https://contanct-and-covid-data-management.vercel.app/
+API END for Covid Data - https://disease.sh/v3/covid-19/countries
+
 To use the Contact and Covid Management App, follow the below steps:
 
 1. Open the app and land on the Contact Page, which has two sections - left and right.
